@@ -1,0 +1,141 @@
+/*selectores*/
+
+
+header{
+    background-color:#f2f5e0 ;
+ }
+    
+body{
+    background-color:aliceblue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.imgLogo{   
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+}
+
+a{
+    color:#dd7b54;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 5px;
+    padding: 5px 5px;
+    border-radius: 8px 8px 8px 8px;
+    background-color: #e4eff1;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    border-bottom: 1px solid #F8F9F9;
+   }
+
+nav ul{
+    display:inline-block;
+}
+ 
+nav ul li{
+      float:left;
+      color: #12a8a8;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 15px;
+}
+ 
+nav ul li a:hover{
+     background-color:#c1dddd;
+     
+}
+
+header nav ul{     
+    list-style: none;
+}
+  
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows:auto;
+    gap: 1em;
+ }
+
+.galeria-imagen {
+    /*border: 10px solid;*/
+     
+}
+
+.imgPortada{
+    width: 80%;
+    height: 70%;
+}
+
+
+
+@media all and (min-width: 320px) {
+    .galeria {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .productos {
+      grid-template-columns: repeat(1, 1fr);
+    }
+}
+  
+@media all and (min-width: 768px) {
+    .galeria {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .productos {
+      grid-template-columns: repeat(3, 1fr);
+    }
+}
+  
+@media all and (min-width: 1024px) {
+    .galeria {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    .productos {
+      grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+h1 {
+    font-size: 2rem;
+    text-align:left;
+    color:#dd7b54;
+     }
+h2 {
+    text-align:center;
+    color:#dd7b54;
+}
+
+h3 {
+    text-align:center;
+    color:#dd7b54;
+}
+   
+.productos{
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: repeat(5, 200px);
+  grid-template-rows: 150px 150px;
+  grid-auto-flow: row dense;
+  justify-content: center; 
+  font-size: 0.8rem; 
+}
+
+#pieFotoProducto{
+  text-align: center;
+  font-weight: bold;
+  color: #dd7b54;
+}
+
+footer{
+    background-color:blanchedalmond;
+    text-align: center;
+    color: #dd7b54;
+}
+
+
+
