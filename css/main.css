@@ -1,14 +1,21 @@
 /*selectores*/
-
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+  }
+  
 
 header{
     background-color:#f2f5e0 ;
+    background-image:linear-gradient(to left, rgb(214, 214, 155), aliceblue);
  }
     
 body{
     background-color:aliceblue;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image:linear-gradient(to left, rgb(214, 214, 155), aliceblue);   
+  }
 
 .imgLogo{   
     display: block;
@@ -17,40 +24,48 @@ body{
     height: 250px;
 }
 
+/*margin (interlineado) forma de contacto*/
+.ulContacto li {margin-bottom:10px;
+}
+
+
 a{
     color:#dd7b54;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0 5px;
-    padding: 5px 5px;
-    border-radius: 8px 8px 8px 8px;
+    padding: 5px;
+    border-radius: 1rem;
     background-color: #e4eff1;
     text-decoration: none;
 }
 
-nav{
-    display: flex;
-    border-bottom: 1px solid #F8F9F9;
-   }
-
 nav ul{
-    display:inline-block;
+    display:flex;
+    justify-content: center;
 }
  
 nav ul li{
-      float:left;
-      color: #12a8a8;
-      font-weight: bold;
-      text-decoration: none;
-      font-size: 15px;
+  list-style: none;
+      padding: 0,3rem;
+      margin: 1rem; 
+      border-radius: 1rem;    
 }
  
 nav ul li a:hover{
-     background-color:#c1dddd;
-     
+     background-color:#c1dddd;     
+        
 }
 
-header nav ul{     
-    list-style: none;
+nav ul li:hover{
+  transform: scale(1.2);
+  /*transform: rotate(10deg);*/
+  
+}
+
+img:hover{
+  transform: scale(1.1);
+}
+img{
+  transition: 1s;
 }
   
 
@@ -59,19 +74,17 @@ header nav ul{
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-template-rows:auto;
     gap: 1em;
+    
  }
 
+ .imgPortada{
+  width: 80%;
+  height: 70%;
+}
 .galeria-imagen {
-    /*border: 10px solid;*/
+    /*border: 2px solid;*/
      
 }
-
-.imgPortada{
-    width: 80%;
-    height: 70%;
-}
-
-
 
 @media all and (min-width: 320px) {
     .galeria {
@@ -105,6 +118,7 @@ h1 {
     text-align:left;
     color:#dd7b54;
      }
+   
 h2 {
     text-align:center;
     color:#dd7b54;
@@ -132,10 +146,9 @@ h3 {
 }
 
 footer{
-    background-color:blanchedalmond;
+  
     text-align: center;
     color: #dd7b54;
 }
-
 
 
