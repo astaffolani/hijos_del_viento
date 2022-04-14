@@ -1,10 +1,10 @@
 /*selectores*/
-* {
+/* {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
   }
-  
+ */ 
 
 header{
     background-color:#f2f5e0 ;
@@ -13,7 +13,7 @@ header{
     
 body{
     background-color:aliceblue;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
     background-image:linear-gradient(to left, rgb(214, 214, 155), aliceblue);   
   }
 
